@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Parser from './parser';
 
 class App extends Component {
+  componentDidMount() {
+    new Parser()
+  }
+
   render() {
     return (
       <div className="App">
